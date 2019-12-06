@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className="w-full h-16 bg-gray-800"></div>
       </div>
       
+      <Footer />
     </div>
   );
 }
