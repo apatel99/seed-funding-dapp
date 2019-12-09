@@ -79,24 +79,87 @@ class CreateSeeding extends React.Component {
 
     render() {
         return(
-            <div className="">
-                <h4>SeedFunding Start here</h4>
+            <div className="mt-4">
+                <h4 className="text-3xl font-bold">Deploy your seedfunding contract</h4>
                 
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text"  name="Name"  label="Name" onChange={this.handlechange} value={this.state.Name} placeholder="Enter Name"/>
-                    <input type="text"  name="Goal" label="Goal" onChange={this.handlechange}  value={this.state.Goal} placeholder="Enter Amount"/>
-                    <button type="submit">Submit</button>
+                <form 
+                    className="flex p-4 justify-between align-items-center"
+                    onSubmit={this.handleSubmit}
+                >
+                    <div className="pr-2 flex-col">
+                        <div className="text-xl">
+                            <label htmlFor="Name" className="pr-2">Enter the name for the contract</label>
+                            <input 
+                                type="text"
+                                name="Name"
+                                label="Name"
+                                onChange={this.handlechange} value={this.state.Name}
+                                placeholder="Scalable Rewards Co."
+                                className="px-2 border-b-2 border-gray-800 rounded-lg"
+                            />
+                        </div>
+
+                        <div className="text-xl">
+                            <label htmlFor="Goal" className="pr-2">Set your goal for this funding round</label>
+                            <input
+                                type="text"
+                                name="Goal"
+                                label="Goal"
+                                onChange={this.handlechange}
+                                value={this.state.Goal}
+                                placeholder="1000 (in ETH)"
+                                className="px-2 border-b-2 border-gray-800 rounded-lg"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="pl-2">
+                        <button
+                            className="px-8 py-2 bg-blue-800 rounded-full uppercase tracking-wide font-bold text-white"
+                            type="submit"
+                        >
+                            Submit
+                        </button>
+                    </div>
                 </form>
 
-                <h4>Get your Id</h4>
 
-                <form onSubmit={this.handleSubmit1}>
-                    <input type="text" name="Name1" onChange={this.handlechange} value={this.state.Name1} placeholder="ENTER NAME HERE"/>
-                    <button type="submit" >Submit</button> 
+                <h4 className="text-3xl font-bold">Verify your deployment</h4>
+
+                <form
+                    className="flex p-4 justify-between align-items-center"
+                    onSubmit={this.handleSubmit1}
+                >
+                    <div className="pr-2 flex-col">
+                        <div className="text-xl">
+                            <label htmlFor="Name1" className="pr-2">Enter the name for the contract</label>
+                            <input
+                                type="text"
+                                name="Name1"
+                                onChange={this.handlechange}
+                                value={this.state.Name1}
+                                placeholder="Scalable Rewards Co."
+                                className="px-2 border-b-2 border-gray-800 rounded-lg"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="pl-2">
+                        <button
+                            className="px-8 py-2 bg-blue-800 rounded-full uppercase tracking-wide font-bold text-white"
+                            type="submit"
+                        >
+                            Submit
+                        </button>
+                    </div>
                 </form>
 
-                {this.state.Id !== "" ? <h3 style={{textAlign: 'center'}}>The Id is {this.state.Id}</h3> : ""}
-
+                <div className="my-2">
+                    {this.state.Id !== ""
+                        ? <h3 className="h-full w-full p-4 border border-green-500 bg-green-200 text-green-900 rounded-lg border-l-4">The ID for your contract is {this.state.Id}</h3>
+                        : <h3 className="h-full w-full p-4 border border-blue-500 bg-blue-200 text-blue-900 rounded-lg border-l-4">Please make a query to verify your Contract ID.</h3>
+                    }
+                </div>
             </div>
         );
     };
