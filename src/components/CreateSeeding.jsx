@@ -124,7 +124,7 @@ class CreateSeeding extends React.Component {
                 </form>
 
 
-                <h4 className="text-3xl font-bold">Verify your deployment</h4>
+                <h4 className="text-3xl font-bold">Find your contract ID</h4>
 
                 <form
                     className="flex p-4 justify-between align-items-center"
@@ -156,8 +156,8 @@ class CreateSeeding extends React.Component {
 
                 <div className="my-2">
                     {this.state.Id !== ""
-                        ? <h3 className="h-full w-full p-4 border border-green-500 bg-green-200 text-green-900 rounded-lg border-l-4">The ID for your contract is {this.state.Id}</h3>
-                        : <h3 className="h-full w-full p-4 border border-blue-500 bg-blue-200 text-blue-900 rounded-lg border-l-4">Please make a query to verify your Contract ID.</h3>
+                        ? <h3 className="h-full w-full p-4 border border-green-900 bg-green-200 text-green-900 rounded-lg border-l-8">The ID for your contract is {this.state.Id}</h3>
+                        : <h3 className="h-full w-full p-4 border border-blue-900 bg-blue-200 text-blue-900 rounded-lg border-l-8">Please make a query to verify your Contract ID.</h3>
                     }
                 </div>
             </div>

@@ -36,7 +36,7 @@ class Removeinvestor extends React.Component {
     render() {
         return(
             <div className="mt-4">
-                <h4 className="text-3xl font-bold">Investors can withdraw from  here</h4>
+                <h4 className="text-3xl font-bold">Investors can withdraw from here</h4>
 
                 <form
                     className="flex p-4 justify-between align-items-center"
