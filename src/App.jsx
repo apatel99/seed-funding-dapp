@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import CreateSeeding from './components/CreateSeeding';
 import AddInvestor from './components/AddInvestor';
 import RemoveInvestor from './components/RemoveInvestor';
+import Invest from './components/Invest';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <AddInvestor/>
 
         <RemoveInvestor/>
+            <Invest/>
       </div>
       
       <Footer />
