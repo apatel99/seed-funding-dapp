@@ -6,6 +6,7 @@ import AddInvestor from './components/AddInvestor';
 import RemoveInvestor from './components/RemoveInvestor';
 import Invest from './components/Invest';
 import Withdraw from './components/Withdraw';
+import GetInvestment from './components/GetInvestment';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <RemoveInvestor/>
             <Invest/>
             <Withdraw/>
+            <GetInvestment/>
       </div>
       
       <Footer />
