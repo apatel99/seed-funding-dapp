@@ -19,6 +19,7 @@ The investors can then exchange the ERC1973 tokens for stable coins with the fir
 
 https://https://github.com/apatel99/seed-funding-dapp/
 URL: https://seedfunding-2b299.firebaseapp.com
+The contract is deployed on rinkeby network at address 0xb25293994ceedd9e668caaf4cac919d44f514bef
 
 # Additional Notes 
 
